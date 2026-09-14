@@ -12032,7 +12032,7 @@ p {
 .image-card {
   position: relative;
 }
-.image-card:hover .titre-image {
+.image-card:hover .titre-image, .image-card:hover .information-menu {
   opacity: 1;
 }
 .image-card:hover img {
@@ -12041,7 +12041,7 @@ p {
 .image-card img {
   transition: all 0.3s;
 }
-.image-card .titre-image {
+.image-card .titre-image, .image-card .information-menu {
   position: absolute;
   top: 50%;
   left: 50%;
