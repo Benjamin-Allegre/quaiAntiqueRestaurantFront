@@ -9,7 +9,7 @@ export const allRoutes = [
     new Route("/menu", "Les Menus", "/pages/cartes/allMenu.html"),
     new Route("/reservations", "Réservations", "/pages/reservations/allResa.html"),
     new Route("/reserver", "Réserver", "/pages/reservations/reserver.html"),
-    new Route("/connexion", "Connexion", "/pages/signin.html"),
+    new Route("/connexion", "Connexion", "/pages/signin.html", "/js/auth/signin.js"),
     new Route("/inscription", "Inscritpion", "/pages/signup.html", "/js/auth/signup.js"),
     new Route("/mon-compte", "Mon compte", "/pages/account.html"),
     new Route("/modifier-password", "Mon compte", "/pages/editPassword.html"),
