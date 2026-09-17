@@ -1,0 +1,79 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Les catégorie</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddCategoryModal">Ajouter une catégorie</button>
+    </div>
+    <div class="text-center">
+        <ul class="list-unstyled">
+            <li>
+                Entrées
+                <button type="button" class="btn btn-outline-light text-black" data-bs-toggle="modal" data-bs-target="#AddCategoryModal"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-outline-light text-black" data-bs-toggle="modal" data-bs-target="#DeleteCatgetorieModal"><i class="bi bi-trash"></i></button>
+            </li>
+            <li>
+                Poissons
+                <button type="button" class="btn btn-outline-light text-black" data-bs-toggle="modal" data-bs-target="#AddCategoryModal"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-outline-light text-black" data-bs-toggle="modal" data-bs-target="#DeleteCatgetorieModal"><i class="bi bi-trash"></i></button>
+            </li>
+            <li>
+                Viandes
+                <button type="button" class="btn btn-outline-light text-black" data-bs-toggle="modal" data-bs-target="#AddCategoryModal"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-outline-light text-black" data-bs-toggle="modal" data-bs-target="#DeleteCatgetorieModal"><i class="bi bi-trash"></i></button>
+            </li>
+            <li>
+                Desserts
+                <button type="button" class="btn btn-outline-light text-black" data-bs-toggle="modal" data-bs-target="#AddCategoryModal"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-outline-light text-black" data-bs-toggle="modal" data-bs-target="#DeleteCatgetorieModal"><i class="bi bi-trash"></i></button>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Modal edition -->
+<div class="modal fade" id="AddCategoryModal" tabindex="-1" aria-labelledby="AddCategoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="AddCategoryModalLabel">Ajouter une catégorie</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="NamePhotoInput" class="form-label">Nom Catgéorie</label>
+                  <input type="text" class="form-control" id="NamePhotoInput" placeholder="Poissons" name="Titre"> 
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal suppression -->
+<div class="modal fade" id="DeleteCatgetorieModal" tabindex="-1" aria-labelledby="DeleteCatgetorieModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Êtes-vous sûr de vouloir supprimer cette photo ? </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <p>Titre</p>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
